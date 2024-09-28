@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/задача_3.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1>Сервис комментариев со спам фильтром</h1>
+      </div>
+
+      <div class="wrapper__form">
+        <div class="subtitle">
+          <h2>Оставьте ваш комментарий</h2>
+        </div>
+        <label for="wrapper__form_name">Введите ваше имя </label>
+        <input type="text" class="wrapper__form_name" id="wrapper__form_name" />
+        <label for="wrapper__form_name">Введите ссылку вашего аватара </label>
+        <input
+          type="text"
+          class="wrapper__from_avatar"
+          id="wrapper__form_avatar"
+        />
+        <label for="wrapper__form_name">Оставьте комментарий </label>
+        <textarea
+          id="wrapper__form_comment"
+          class="wrapper__form_comment"
+          rows="1"
+          placeholder="Введите текст..."
+        ></textarea>
+
+        <button class="wrapper__form_btn" type="submit" id="wrapper__form_btn">
+          Отправить
+        </button>
+
+        <div class="wrapper__chat">
+          <div class="subtitle">
+            <h2>Чат</h2>
+            <div class="wrapper__chat_box">
+              <div class="wrapper__chat_persone">
+                <div class="wrapper__chat_avatar">
+                  <img src="" alt="" id="wrapper__chat_avatar" />
+                </div>
+                <div class="wrapper__chat_name">
+                  <p id="wrapper__chat_name"></p>
+                </div>
+              </div>
+              <div class="wrapper__chat_comment">
+                <p id="wrapper__chat_comment"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="задача_3.js"></script>
+  </body>
+</html>

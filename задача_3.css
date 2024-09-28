@@ -1,0 +1,99 @@
+.wrapper {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+.title {
+  color: white;
+}
+.subtitle {
+  color: blueviolet;
+  grid-row: 1;
+  height: 50px;
+}
+
+.wrapper__form {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+label {
+  grid-column: 1;
+  color: white;
+}
+input {
+  width: 70%;
+  height: auto;
+  border-style: dotted;
+  border-color: blueviolet;
+  border-width: 2px;
+  background-color: black;
+  margin: 0.5rem 0 2rem 0;
+}
+.wrapper__form_name {
+  grid-column: 1;
+  color: white;
+  height: 1.5rem;
+}
+.wrapper__from_avatar {
+  grid-column: 1;
+  color: white;
+  height: 1.5rem;
+}
+.wrapper__form_comment {
+  grid-column: 1;
+  color: rgb(254, 254, 254);
+  background-color: black;
+  height: auto;
+  margin: 0.5rem 0 1.5rem 0;
+  border-style: dotted;
+  border-color: blueviolet;
+  border-width: 2px;
+  width: 70%;
+  padding: 0.5rem;
+}
+.wrapper__form_btn {
+  grid-column: 1;
+  color: white;
+  background-color: blueviolet;
+  font-weight: 800;
+  width: 150px;
+  height: 40px;
+}
+.wrapper__form_btn:hover {
+  background-color: aliceblue;
+  color: black;
+}
+.wrapper__chat {
+  grid-column: 2;
+  grid-row-start: 1;
+  width: 80%;
+}
+.wrapper__chat h2 {
+  grid-column: 2;
+  align-self: start;
+}
+
+.wrapper__chat_box {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__chat_persone {
+  display: flex;
+  align-items: center;
+}
+.wrapper__chat_avatar img {
+  margin-right: 2rem;
+  border-radius: 50%;
+  border-width: 5px;
+  border: solid white;
+  width: 4rem;
+}
+.wrapper__chat_name {
+  color: blueviolet;
+}
+.wrapper__chat_comment {
+  padding: 0.5rem;
+  border-bottom: 3px blueviolet dotted;
+}
